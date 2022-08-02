@@ -12,10 +12,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  border: none;
 }
 
 body {
-  background-color: #3d0302;
+  background-color: #3D0302;
+  min-height: 100vh;
 }
 
 .header {
@@ -28,6 +31,26 @@ body {
 .header span {
   color: #FFC640;
   font-size: 3rem;
-  font-weight: 600;
   margin: 0 0 8px 60px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+#btn-add-book {
+  color: #FFC640;
+  font-size: 2.5rem;
+  padding: 20px 40px;
+  margin-top: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  place-self: center;
+  transition: all .2s;
+}
+
+#btn-add-book:hover {
+  background-color: rgba(213, 13, 10, 0.593);
+  box-shadow: #a3310b42 0 0  20px 10px;
 }
