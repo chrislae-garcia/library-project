@@ -18,25 +18,26 @@
 
 body {
   background-color: #3D0302;
+  color: #FFC640;
   min-height: 100vh;
 }
 
 .header {
-  min-height: 100px;
-  background-color: #A3320B;
   display: flex;
   align-items: flex-end;
+  min-height: 100px;
+  background-color: #A3320B;
+  padding-left: 20rem;
 }
 
 .header span {
-  color: #FFC640;
   font-size: 3rem;
-  margin: 0 0 8px 60px;
+  margin-bottom: 8px;
 }
 
 .content {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
+  display: flex;
+  flex-direction: column;
 }
 
 #btn-add-book {
@@ -53,4 +54,34 @@ body {
 #btn-add-book:hover {
   background-color: rgba(213, 13, 10, 0.593);
   box-shadow: #a3310b42 0 0  20px 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 30px 10%;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #A3320B;
+  padding: 20px 0;
+  gap: 10px 5%;
+}
+
+.card > * {
+  flex: 1 1 40%;
+  font-size: 22px;
+}
+
+.card > *:nth-child(odd) {
+  flex: 1 1 30%;
+  justify-self: flex-end;
+  text-align: end;
+}
+
+.card > *:nth-child(even) {
+  flex: 1 1 65%;
 }
