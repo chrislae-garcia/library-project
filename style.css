@@ -67,6 +67,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: #A3320B;
+  border-radius: 10px;
   padding: 20px 0;
   gap: 10px 5%;
 }
